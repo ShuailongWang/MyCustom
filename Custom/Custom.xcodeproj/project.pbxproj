@@ -16,6 +16,7 @@
 		843450D21E5449A300EBD6A0 /* CusPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843450D01E5449A300EBD6A0 /* CusPickerView.m */; };
 		843450D31E5449A300EBD6A0 /* CusPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843450D11E5449A300EBD6A0 /* CusPickerView.xib */; };
 		843450D61E544A1F00EBD6A0 /* CusPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843450D51E544A1F00EBD6A0 /* CusPickerController.m */; };
+		843450D91E544BFF00EBD6A0 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843450D81E544BFF00EBD6A0 /* FourViewController.m */; };
 		844B42461E542F33002F2444 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B42451E542F33002F2444 /* main.m */; };
 		844B42491E542F33002F2444 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B42481E542F33002F2444 /* AppDelegate.m */; };
 		844B424C1E542F33002F2444 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B424B1E542F33002F2444 /* ViewController.m */; };
@@ -41,6 +42,8 @@
 		843450D11E5449A300EBD6A0 /* CusPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CusPickerView.xib; sourceTree = "<group>"; };
 		843450D41E544A1F00EBD6A0 /* CusPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CusPickerController.h; sourceTree = "<group>"; };
 		843450D51E544A1F00EBD6A0 /* CusPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CusPickerController.m; sourceTree = "<group>"; };
+		843450D71E544BFF00EBD6A0 /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
+		843450D81E544BFF00EBD6A0 /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
 		844B42411E542F33002F2444 /* Custom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Custom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844B42451E542F33002F2444 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		844B42471E542F33002F2444 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,8 +93,18 @@
 				843450C71E54446F00EBD6A0 /* CusDatePickerController.m */,
 				843450D41E544A1F00EBD6A0 /* CusPickerController.h */,
 				843450D51E544A1F00EBD6A0 /* CusPickerController.m */,
+				843450D71E544BFF00EBD6A0 /* FourViewController.h */,
+				843450D81E544BFF00EBD6A0 /* FourViewController.m */,
+				843450DA1E544C6300EBD6A0 /* View */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		843450DA1E544C6300EBD6A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		844B42381E542F33002F2444 = {
@@ -218,6 +231,7 @@
 				843450C51E54443500EBD6A0 /* CustomLabelController.m in Sources */,
 				844B42461E542F33002F2444 /* main.m in Sources */,
 				843450D21E5449A300EBD6A0 /* CusPickerView.m in Sources */,
+				843450D91E544BFF00EBD6A0 /* FourViewController.m in Sources */,
 				843450C81E54446F00EBD6A0 /* CusDatePickerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

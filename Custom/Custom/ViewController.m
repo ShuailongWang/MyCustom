@@ -10,6 +10,7 @@
 #import "CustomLabelController.h"
 #import "CusDatePickerController.h"
 #import "CusPickerController.h"
+#import "FourViewController.h"
 
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -67,6 +68,11 @@ static NSString *UITableViewCellID = @"UITableViewCellID";
             [self.navigationController pushViewController:CustomVC animated:YES];
         }
             break;
+        case 3:{
+            FourViewController *CustomVC = [[FourViewController alloc]init];
+            [self.navigationController pushViewController:CustomVC animated:YES];
+        }
+            break;
         default:
             break;
     }
@@ -79,7 +85,8 @@ static NSString *UITableViewCellID = @"UITableViewCellID";
         _titleArr = @[
                       @"CustomLabel",
                       @"CustomDatePicker",
-                      @"CustomPickerView"
+                      @"CustomPickerView",
+                      @"four"
                       ];
     }
     return _titleArr;
