@@ -7,6 +7,7 @@
 //
 
 #import "FourViewController.h"
+#import "CustomInput.h"
 
 @interface FourViewController ()
 
@@ -18,11 +19,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self setupUI];
+
 }
 
--(void)setupUI{
-
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [CustomInput setDescTitle:@"请输入"];
+    [CustomInput setMaxContentLength:10];
+    [CustomInput setNormalContent:@"输入你想输入的..."];
+    [CustomInput showInput:^(NSString *inputContent) {
+        NSLog(@"%@", inputContent);
+    }];
 }
 
 @end

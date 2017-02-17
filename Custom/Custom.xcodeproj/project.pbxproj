@@ -23,6 +23,9 @@
 		844B424F1E542F33002F2444 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844B424D1E542F33002F2444 /* Main.storyboard */; };
 		844B42511E542F33002F2444 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844B42501E542F33002F2444 /* Assets.xcassets */; };
 		844B42541E542F33002F2444 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844B42521E542F33002F2444 /* LaunchScreen.storyboard */; };
+		846134861E56F26200D65D6E /* CustomInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 846134821E56F26200D65D6E /* CustomInput.m */; };
+		846134871E56F26200D65D6E /* CustomInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846134841E56F26200D65D6E /* CustomInputView.m */; };
+		846134881E56F26200D65D6E /* CustomInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846134851E56F26200D65D6E /* CustomInputView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,11 @@
 		844B42501E542F33002F2444 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844B42531E542F33002F2444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		844B42551E542F33002F2444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846134811E56F26200D65D6E /* CustomInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInput.h; sourceTree = "<group>"; };
+		846134821E56F26200D65D6E /* CustomInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInput.m; sourceTree = "<group>"; };
+		846134831E56F26200D65D6E /* CustomInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInputView.h; sourceTree = "<group>"; };
+		846134841E56F26200D65D6E /* CustomInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInputView.m; sourceTree = "<group>"; };
+		846134851E56F26200D65D6E /* CustomInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomInputView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,14 +78,10 @@
 		843450B41E5443D500EBD6A0 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				843450CF1E5449A300EBD6A0 /* CusPickerView.h */,
-				843450D01E5449A300EBD6A0 /* CusPickerView.m */,
-				843450D11E5449A300EBD6A0 /* CusPickerView.xib */,
-				843450B91E54441400EBD6A0 /* CusDatePickerView.h */,
-				843450BA1E54441400EBD6A0 /* CusDatePickerView.m */,
-				843450BB1E54441400EBD6A0 /* CusDatePickerView.xib */,
-				843450B51E5443E100EBD6A0 /* CustomView.h */,
-				843450B61E5443E100EBD6A0 /* CustomView.m */,
+				846134801E56F26200D65D6E /* CustomInput */,
+				846134891E56F2A300D65D6E /* CusPickerView */,
+				8461348A1E56F2AA00D65D6E /* CusDatePickerView */,
+				8461348B1E56F2B100D65D6E /* CustomLabel */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -85,16 +89,11 @@
 		843450B81E5443F800EBD6A0 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				843450CC1E54477400EBD6A0 /* BaseViewController.h */,
-				843450CD1E54477400EBD6A0 /* BaseViewController.m */,
-				843450C31E54443500EBD6A0 /* CustomLabelController.h */,
-				843450C41E54443500EBD6A0 /* CustomLabelController.m */,
-				843450C61E54446F00EBD6A0 /* CusDatePickerController.h */,
-				843450C71E54446F00EBD6A0 /* CusDatePickerController.m */,
-				843450D41E544A1F00EBD6A0 /* CusPickerController.h */,
-				843450D51E544A1F00EBD6A0 /* CusPickerController.m */,
-				843450D71E544BFF00EBD6A0 /* FourViewController.h */,
-				843450D81E544BFF00EBD6A0 /* FourViewController.m */,
+				846134901E56F2E200D65D6E /* Base */,
+				8461348F1E56F2DB00D65D6E /* CustomLabel */,
+				8461348E1E56F2D300D65D6E /* CusDatePickerView */,
+				8461348D1E56F2CD00D65D6E /* CusPickerView */,
+				8461348C1E56F2C100D65D6E /* CustomInput */,
 				843450DA1E544C6300EBD6A0 /* View */,
 			);
 			path = Demo;
@@ -147,6 +146,92 @@
 				844B42451E542F33002F2444 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		846134801E56F26200D65D6E /* CustomInput */ = {
+			isa = PBXGroup;
+			children = (
+				846134811E56F26200D65D6E /* CustomInput.h */,
+				846134821E56F26200D65D6E /* CustomInput.m */,
+				846134831E56F26200D65D6E /* CustomInputView.h */,
+				846134841E56F26200D65D6E /* CustomInputView.m */,
+				846134851E56F26200D65D6E /* CustomInputView.xib */,
+			);
+			path = CustomInput;
+			sourceTree = "<group>";
+		};
+		846134891E56F2A300D65D6E /* CusPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				843450CF1E5449A300EBD6A0 /* CusPickerView.h */,
+				843450D01E5449A300EBD6A0 /* CusPickerView.m */,
+				843450D11E5449A300EBD6A0 /* CusPickerView.xib */,
+			);
+			name = CusPickerView;
+			sourceTree = "<group>";
+		};
+		8461348A1E56F2AA00D65D6E /* CusDatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				843450B91E54441400EBD6A0 /* CusDatePickerView.h */,
+				843450BA1E54441400EBD6A0 /* CusDatePickerView.m */,
+				843450BB1E54441400EBD6A0 /* CusDatePickerView.xib */,
+			);
+			name = CusDatePickerView;
+			sourceTree = "<group>";
+		};
+		8461348B1E56F2B100D65D6E /* CustomLabel */ = {
+			isa = PBXGroup;
+			children = (
+				843450B51E5443E100EBD6A0 /* CustomView.h */,
+				843450B61E5443E100EBD6A0 /* CustomView.m */,
+			);
+			name = CustomLabel;
+			sourceTree = "<group>";
+		};
+		8461348C1E56F2C100D65D6E /* CustomInput */ = {
+			isa = PBXGroup;
+			children = (
+				843450D71E544BFF00EBD6A0 /* FourViewController.h */,
+				843450D81E544BFF00EBD6A0 /* FourViewController.m */,
+			);
+			name = CustomInput;
+			sourceTree = "<group>";
+		};
+		8461348D1E56F2CD00D65D6E /* CusPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				843450D41E544A1F00EBD6A0 /* CusPickerController.h */,
+				843450D51E544A1F00EBD6A0 /* CusPickerController.m */,
+			);
+			name = CusPickerView;
+			sourceTree = "<group>";
+		};
+		8461348E1E56F2D300D65D6E /* CusDatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				843450C61E54446F00EBD6A0 /* CusDatePickerController.h */,
+				843450C71E54446F00EBD6A0 /* CusDatePickerController.m */,
+			);
+			name = CusDatePickerView;
+			sourceTree = "<group>";
+		};
+		8461348F1E56F2DB00D65D6E /* CustomLabel */ = {
+			isa = PBXGroup;
+			children = (
+				843450C31E54443500EBD6A0 /* CustomLabelController.h */,
+				843450C41E54443500EBD6A0 /* CustomLabelController.m */,
+			);
+			name = CustomLabel;
+			sourceTree = "<group>";
+		};
+		846134901E56F2E200D65D6E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				843450CC1E54477400EBD6A0 /* BaseViewController.h */,
+				843450CD1E54477400EBD6A0 /* BaseViewController.m */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846134881E56F26200D65D6E /* CustomInputView.xib in Resources */,
 				843450C01E54441400EBD6A0 /* CusDatePickerView.xib in Resources */,
 				844B42541E542F33002F2444 /* LaunchScreen.storyboard in Resources */,
 				844B42511E542F33002F2444 /* Assets.xcassets in Resources */,
@@ -227,12 +313,14 @@
 				843450D61E544A1F00EBD6A0 /* CusPickerController.m in Sources */,
 				843450BF1E54441400EBD6A0 /* CusDatePickerView.m in Sources */,
 				843450B71E5443E100EBD6A0 /* CustomView.m in Sources */,
+				846134871E56F26200D65D6E /* CustomInputView.m in Sources */,
 				844B42491E542F33002F2444 /* AppDelegate.m in Sources */,
 				843450C51E54443500EBD6A0 /* CustomLabelController.m in Sources */,
 				844B42461E542F33002F2444 /* main.m in Sources */,
 				843450D21E5449A300EBD6A0 /* CusPickerView.m in Sources */,
 				843450D91E544BFF00EBD6A0 /* FourViewController.m in Sources */,
 				843450C81E54446F00EBD6A0 /* CusDatePickerController.m in Sources */,
+				846134861E56F26200D65D6E /* CustomInput.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
