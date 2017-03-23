@@ -11,6 +11,7 @@
 #import "CusDatePickerController.h"
 #import "CusPickerController.h"
 #import "FourViewController.h"
+#import "RGHomeController.h"
 
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -73,6 +74,11 @@ static NSString *UITableViewCellID = @"UITableViewCellID";
             [self.navigationController pushViewController:CustomVC animated:YES];
         }
             break;
+        case 4:{
+            RGHomeController *CustomVC = [[RGHomeController alloc]init];
+            [self.navigationController pushViewController:CustomVC animated:YES];
+        }
+            break;
         default:
             break;
     }
@@ -86,7 +92,8 @@ static NSString *UITableViewCellID = @"UITableViewCellID";
                       @"CustomLabel",
                       @"CustomDatePicker",
                       @"CustomPickerView",
-                      @"four"
+                      @"four",
+                      @"webView"
                       ];
     }
     return _titleArr;

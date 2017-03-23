@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8414FD801E83CD4C0052697A /* RGWebProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414FD7F1E83CD4C0052697A /* RGWebProgressLayer.m */; };
+		8414FD831E83CD500052697A /* RGWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414FD821E83CD500052697A /* RGWebView.m */; };
+		8414FD861E83CD5D0052697A /* NSTimer+addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414FD851E83CD5D0052697A /* NSTimer+addition.m */; };
+		8414FD8A1E83CD920052697A /* RGHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414FD891E83CD920052697A /* RGHomeController.m */; };
+		8414FD901E83CDA20052697A /* JYCustomWebViewProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414FD8D1E83CDA20052697A /* JYCustomWebViewProtocol.m */; };
+		8414FD911E83CDA20052697A /* NSURLProtocol+WebKitSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414FD8F1E83CDA20052697A /* NSURLProtocol+WebKitSupport.m */; };
+		8414FDAC1E83CEEF0052697A /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414FD961E83CEEF0052697A /* NSDate+Extension.m */; };
+		8414FDAD1E83CEEF0052697A /* NSNumber+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414FD981E83CEEF0052697A /* NSNumber+Extension.m */; };
+		8414FDAE1E83CEEF0052697A /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414FD9A1E83CEEF0052697A /* NSObject+Common.m */; };
+		8414FDAF1E83CEEF0052697A /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414FD9C1E83CEEF0052697A /* NSString+Extension.m */; };
+		8414FDB01E83CEEF0052697A /* NSTimer+addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414FD9E1E83CEEF0052697A /* NSTimer+addition.m */; };
+		8414FDB11E83CEEF0052697A /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414FDA01E83CEEF0052697A /* UIImage+Common.m */; };
+		8414FDB21E83CEEF0052697A /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414FDA21E83CEEF0052697A /* UILabel+ChangeLineSpaceAndWordSpace.m */; };
+		8414FDB31E83CEEF0052697A /* UITabBar+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414FDA41E83CEEF0052697A /* UITabBar+Badge.m */; };
+		8414FDB41E83CEEF0052697A /* UITextView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414FDA61E83CEEF0052697A /* UITextView+Extension.m */; };
+		8414FDB51E83CEEF0052697A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414FDA81E83CEEF0052697A /* UIView+Extension.m */; };
 		843450B71E5443E100EBD6A0 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843450B61E5443E100EBD6A0 /* CustomView.m */; };
 		843450BF1E54441400EBD6A0 /* CusDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843450BA1E54441400EBD6A0 /* CusDatePickerView.m */; };
 		843450C01E54441400EBD6A0 /* CusDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843450BB1E54441400EBD6A0 /* CusDatePickerView.xib */; };
@@ -26,9 +42,45 @@
 		846134861E56F26200D65D6E /* CustomInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 846134821E56F26200D65D6E /* CustomInput.m */; };
 		846134871E56F26200D65D6E /* CustomInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846134841E56F26200D65D6E /* CustomInputView.m */; };
 		846134881E56F26200D65D6E /* CustomInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846134851E56F26200D65D6E /* CustomInputView.xib */; };
+		F8B8660C778CE931A53B9252 /* libPods-Custom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF36F58667207BB263FACF7A /* libPods-Custom.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31B1D769B8ED7A6F0B17A43B /* Pods-Custom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Custom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Custom/Pods-Custom.debug.xcconfig"; sourceTree = "<group>"; };
+		8414FD7E1E83CD4C0052697A /* RGWebProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGWebProgressLayer.h; sourceTree = "<group>"; };
+		8414FD7F1E83CD4C0052697A /* RGWebProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGWebProgressLayer.m; sourceTree = "<group>"; };
+		8414FD811E83CD500052697A /* RGWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGWebView.h; sourceTree = "<group>"; };
+		8414FD821E83CD500052697A /* RGWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGWebView.m; sourceTree = "<group>"; };
+		8414FD841E83CD5D0052697A /* NSTimer+addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+addition.h"; sourceTree = "<group>"; };
+		8414FD851E83CD5D0052697A /* NSTimer+addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+addition.m"; sourceTree = "<group>"; };
+		8414FD881E83CD920052697A /* RGHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGHomeController.h; sourceTree = "<group>"; };
+		8414FD891E83CD920052697A /* RGHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGHomeController.m; sourceTree = "<group>"; };
+		8414FD8C1E83CDA20052697A /* JYCustomWebViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYCustomWebViewProtocol.h; sourceTree = "<group>"; };
+		8414FD8D1E83CDA20052697A /* JYCustomWebViewProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYCustomWebViewProtocol.m; sourceTree = "<group>"; };
+		8414FD8E1E83CDA20052697A /* NSURLProtocol+WebKitSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLProtocol+WebKitSupport.h"; sourceTree = "<group>"; };
+		8414FD8F1E83CDA20052697A /* NSURLProtocol+WebKitSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLProtocol+WebKitSupport.m"; sourceTree = "<group>"; };
+		8414FD921E83CEAD0052697A /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8414FD951E83CEEF0052697A /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		8414FD961E83CEEF0052697A /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		8414FD971E83CEEF0052697A /* NSNumber+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Extension.h"; sourceTree = "<group>"; };
+		8414FD981E83CEEF0052697A /* NSNumber+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Extension.m"; sourceTree = "<group>"; };
+		8414FD991E83CEEF0052697A /* NSObject+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Common.h"; sourceTree = "<group>"; };
+		8414FD9A1E83CEEF0052697A /* NSObject+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Common.m"; sourceTree = "<group>"; };
+		8414FD9B1E83CEEF0052697A /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		8414FD9C1E83CEEF0052697A /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		8414FD9D1E83CEEF0052697A /* NSTimer+addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+addition.h"; sourceTree = "<group>"; };
+		8414FD9E1E83CEEF0052697A /* NSTimer+addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+addition.m"; sourceTree = "<group>"; };
+		8414FD9F1E83CEEF0052697A /* UIImage+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Common.h"; sourceTree = "<group>"; };
+		8414FDA01E83CEEF0052697A /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Common.m"; sourceTree = "<group>"; };
+		8414FDA11E83CEEF0052697A /* UILabel+ChangeLineSpaceAndWordSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ChangeLineSpaceAndWordSpace.h"; sourceTree = "<group>"; };
+		8414FDA21E83CEEF0052697A /* UILabel+ChangeLineSpaceAndWordSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ChangeLineSpaceAndWordSpace.m"; sourceTree = "<group>"; };
+		8414FDA31E83CEEF0052697A /* UITabBar+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+Badge.h"; sourceTree = "<group>"; };
+		8414FDA41E83CEEF0052697A /* UITabBar+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+Badge.m"; sourceTree = "<group>"; };
+		8414FDA51E83CEEF0052697A /* UITextView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Extension.h"; sourceTree = "<group>"; };
+		8414FDA61E83CEEF0052697A /* UITextView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Extension.m"; sourceTree = "<group>"; };
+		8414FDA71E83CEEF0052697A /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		8414FDA81E83CEEF0052697A /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		8414FDAA1E83CEEF0052697A /* RGMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGMacros.h; sourceTree = "<group>"; };
 		843450B51E5443E100EBD6A0 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
 		843450B61E5443E100EBD6A0 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 		843450B91E54441400EBD6A0 /* CusDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CusDatePickerView.h; sourceTree = "<group>"; };
@@ -62,6 +114,8 @@
 		846134831E56F26200D65D6E /* CustomInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInputView.h; sourceTree = "<group>"; };
 		846134841E56F26200D65D6E /* CustomInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInputView.m; sourceTree = "<group>"; };
 		846134851E56F26200D65D6E /* CustomInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomInputView.xib; sourceTree = "<group>"; };
+		DF36F58667207BB263FACF7A /* libPods-Custom.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Custom.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F920BC3B55489A3526D43871 /* Pods-Custom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Custom.release.xcconfig"; path = "Pods/Target Support Files/Pods-Custom/Pods-Custom.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,15 +123,128 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B8660C778CE931A53B9252 /* libPods-Custom.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3090A1CAC08ACBCD7384E7CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF36F58667207BB263FACF7A /* libPods-Custom.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A8AD84B7FEF9536305ADA27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31B1D769B8ED7A6F0B17A43B /* Pods-Custom.debug.xcconfig */,
+				F920BC3B55489A3526D43871 /* Pods-Custom.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8414FD7C1E83CD310052697A /* WebProgress */ = {
+			isa = PBXGroup;
+			children = (
+				8414FD841E83CD5D0052697A /* NSTimer+addition.h */,
+				8414FD851E83CD5D0052697A /* NSTimer+addition.m */,
+				8414FD7E1E83CD4C0052697A /* RGWebProgressLayer.h */,
+				8414FD7F1E83CD4C0052697A /* RGWebProgressLayer.m */,
+			);
+			path = WebProgress;
+			sourceTree = "<group>";
+		};
+		8414FD7D1E83CD3E0052697A /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				8414FD811E83CD500052697A /* RGWebView.h */,
+				8414FD821E83CD500052697A /* RGWebView.m */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		8414FD871E83CD840052697A /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				8414FD881E83CD920052697A /* RGHomeController.h */,
+				8414FD891E83CD920052697A /* RGHomeController.m */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		8414FD8B1E83CDA20052697A /* URLProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				8414FD8C1E83CDA20052697A /* JYCustomWebViewProtocol.h */,
+				8414FD8D1E83CDA20052697A /* JYCustomWebViewProtocol.m */,
+				8414FD8E1E83CDA20052697A /* NSURLProtocol+WebKitSupport.h */,
+				8414FD8F1E83CDA20052697A /* NSURLProtocol+WebKitSupport.m */,
+			);
+			path = URLProtocol;
+			sourceTree = "<group>";
+		};
+		8414FD931E83CEEF0052697A /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				8414FD941E83CEEF0052697A /* Categories */,
+				8414FDA91E83CEEF0052697A /* Configs */,
+				8414FDAB1E83CEEF0052697A /* Tools */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		8414FD941E83CEEF0052697A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8414FD951E83CEEF0052697A /* NSDate+Extension.h */,
+				8414FD961E83CEEF0052697A /* NSDate+Extension.m */,
+				8414FD971E83CEEF0052697A /* NSNumber+Extension.h */,
+				8414FD981E83CEEF0052697A /* NSNumber+Extension.m */,
+				8414FD991E83CEEF0052697A /* NSObject+Common.h */,
+				8414FD9A1E83CEEF0052697A /* NSObject+Common.m */,
+				8414FD9B1E83CEEF0052697A /* NSString+Extension.h */,
+				8414FD9C1E83CEEF0052697A /* NSString+Extension.m */,
+				8414FD9D1E83CEEF0052697A /* NSTimer+addition.h */,
+				8414FD9E1E83CEEF0052697A /* NSTimer+addition.m */,
+				8414FD9F1E83CEEF0052697A /* UIImage+Common.h */,
+				8414FDA01E83CEEF0052697A /* UIImage+Common.m */,
+				8414FDA11E83CEEF0052697A /* UILabel+ChangeLineSpaceAndWordSpace.h */,
+				8414FDA21E83CEEF0052697A /* UILabel+ChangeLineSpaceAndWordSpace.m */,
+				8414FDA31E83CEEF0052697A /* UITabBar+Badge.h */,
+				8414FDA41E83CEEF0052697A /* UITabBar+Badge.m */,
+				8414FDA51E83CEEF0052697A /* UITextView+Extension.h */,
+				8414FDA61E83CEEF0052697A /* UITextView+Extension.m */,
+				8414FDA71E83CEEF0052697A /* UIView+Extension.h */,
+				8414FDA81E83CEEF0052697A /* UIView+Extension.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		8414FDA91E83CEEF0052697A /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				8414FDAA1E83CEEF0052697A /* RGMacros.h */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		8414FDAB1E83CEEF0052697A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		843450B41E5443D500EBD6A0 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				8414FD8B1E83CDA20052697A /* URLProtocol */,
+				8414FD7D1E83CD3E0052697A /* WebView */,
+				8414FD7C1E83CD310052697A /* WebProgress */,
 				846134801E56F26200D65D6E /* CustomInput */,
 				846134891E56F2A300D65D6E /* CusPickerView */,
 				8461348A1E56F2AA00D65D6E /* CusDatePickerView */,
@@ -89,6 +256,7 @@
 		843450B81E5443F800EBD6A0 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				8414FD871E83CD840052697A /* WebView */,
 				846134901E56F2E200D65D6E /* Base */,
 				8461348F1E56F2DB00D65D6E /* CustomLabel */,
 				8461348E1E56F2D300D65D6E /* CusDatePickerView */,
@@ -111,6 +279,8 @@
 			children = (
 				844B42431E542F33002F2444 /* Custom */,
 				844B42421E542F33002F2444 /* Products */,
+				4A8AD84B7FEF9536305ADA27 /* Pods */,
+				3090A1CAC08ACBCD7384E7CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +295,7 @@
 		844B42431E542F33002F2444 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				8414FD931E83CEEF0052697A /* Commons */,
 				843450B41E5443D500EBD6A0 /* CustomView */,
 				843450B81E5443F800EBD6A0 /* Demo */,
 				844B42471E542F33002F2444 /* AppDelegate.h */,
@@ -132,9 +303,6 @@
 				844B424A1E542F33002F2444 /* ViewController.h */,
 				844B424B1E542F33002F2444 /* ViewController.m */,
 				844B424D1E542F33002F2444 /* Main.storyboard */,
-				844B42501E542F33002F2444 /* Assets.xcassets */,
-				844B42521E542F33002F2444 /* LaunchScreen.storyboard */,
-				844B42551E542F33002F2444 /* Info.plist */,
 				844B42441E542F33002F2444 /* Supporting Files */,
 			);
 			path = Custom;
@@ -143,6 +311,10 @@
 		844B42441E542F33002F2444 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8414FD921E83CEAD0052697A /* PrefixHeader.pch */,
+				844B42501E542F33002F2444 /* Assets.xcassets */,
+				844B42521E542F33002F2444 /* LaunchScreen.storyboard */,
+				844B42551E542F33002F2444 /* Info.plist */,
 				844B42451E542F33002F2444 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -241,9 +413,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 844B42581E542F33002F2444 /* Build configuration list for PBXNativeTarget "Custom" */;
 			buildPhases = (
+				6E8C265CE8E61D39C28FF805 /* [CP] Check Pods Manifest.lock */,
 				844B423D1E542F33002F2444 /* Sources */,
 				844B423E1E542F33002F2444 /* Frameworks */,
 				844B423F1E542F33002F2444 /* Resources */,
+				D49E459E870679126C861CE1 /* [CP] Embed Pods Frameworks */,
+				9145FFD7EF807A261F4F76AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,6 +440,7 @@
 				TargetAttributes = {
 					844B42401E542F33002F2444 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = LTEG4L77V5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -303,21 +479,85 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6E8C265CE8E61D39C28FF805 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9145FFD7EF807A261F4F76AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Custom/Pods-Custom-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D49E459E870679126C861CE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Custom/Pods-Custom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		844B423D1E542F33002F2444 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8414FD911E83CDA20052697A /* NSURLProtocol+WebKitSupport.m in Sources */,
 				844B424C1E542F33002F2444 /* ViewController.m in Sources */,
 				843450CE1E54477400EBD6A0 /* BaseViewController.m in Sources */,
 				843450D61E544A1F00EBD6A0 /* CusPickerController.m in Sources */,
 				843450BF1E54441400EBD6A0 /* CusDatePickerView.m in Sources */,
 				843450B71E5443E100EBD6A0 /* CustomView.m in Sources */,
+				8414FDB21E83CEEF0052697A /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */,
 				846134871E56F26200D65D6E /* CustomInputView.m in Sources */,
+				8414FD861E83CD5D0052697A /* NSTimer+addition.m in Sources */,
+				8414FDB51E83CEEF0052697A /* UIView+Extension.m in Sources */,
 				844B42491E542F33002F2444 /* AppDelegate.m in Sources */,
 				843450C51E54443500EBD6A0 /* CustomLabelController.m in Sources */,
+				8414FDAE1E83CEEF0052697A /* NSObject+Common.m in Sources */,
+				8414FDB11E83CEEF0052697A /* UIImage+Common.m in Sources */,
+				8414FD901E83CDA20052697A /* JYCustomWebViewProtocol.m in Sources */,
+				8414FD831E83CD500052697A /* RGWebView.m in Sources */,
+				8414FDB41E83CEEF0052697A /* UITextView+Extension.m in Sources */,
+				8414FDAF1E83CEEF0052697A /* NSString+Extension.m in Sources */,
+				8414FDB01E83CEEF0052697A /* NSTimer+addition.m in Sources */,
+				8414FD801E83CD4C0052697A /* RGWebProgressLayer.m in Sources */,
 				844B42461E542F33002F2444 /* main.m in Sources */,
+				8414FDB31E83CEEF0052697A /* UITabBar+Badge.m in Sources */,
 				843450D21E5449A300EBD6A0 /* CusPickerView.m in Sources */,
+				8414FD8A1E83CD920052697A /* RGHomeController.m in Sources */,
+				8414FDAD1E83CEEF0052697A /* NSNumber+Extension.m in Sources */,
+				8414FDAC1E83CEEF0052697A /* NSDate+Extension.m in Sources */,
 				843450D91E544BFF00EBD6A0 /* FourViewController.m in Sources */,
 				843450C81E54446F00EBD6A0 /* CusDatePickerController.m in Sources */,
 				846134861E56F26200D65D6E /* CustomInput.m in Sources */,
@@ -436,9 +676,13 @@
 		};
 		844B42591E542F33002F2444 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31B1D769B8ED7A6F0B17A43B /* Pods-Custom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LTEG4L77V5;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Custom/PrefixHeader.pch";
 				INFOPLIST_FILE = Custom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.it.Custom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,9 +691,13 @@
 		};
 		844B425A1E542F33002F2444 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F920BC3B55489A3526D43871 /* Pods-Custom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LTEG4L77V5;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Custom/PrefixHeader.pch";
 				INFOPLIST_FILE = Custom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.it.Custom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
