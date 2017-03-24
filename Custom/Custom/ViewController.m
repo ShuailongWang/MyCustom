@@ -12,6 +12,7 @@
 #import "CusPickerController.h"
 #import "FourViewController.h"
 #import "RGHomeController.h"
+#import "WelcomeController.h"
 
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -79,6 +80,10 @@ static NSString *UITableViewCellID = @"UITableViewCellID";
             [self.navigationController pushViewController:CustomVC animated:YES];
         }
             break;
+        case 5:{
+            WelcomeController *welcomeVC = [[WelcomeController alloc]init];
+            [self.navigationController pushViewController:welcomeVC animated:YES];
+        }
         default:
             break;
     }
@@ -92,7 +97,7 @@ static NSString *UITableViewCellID = @"UITableViewCellID";
                       @"CustomLabel",
                       @"CustomDatePicker",
                       @"CustomPickerView",
-                      @"four",
+                      @"inputView",
                       @"webView"
                       ];
     }

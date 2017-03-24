@@ -42,6 +42,9 @@
 		846134861E56F26200D65D6E /* CustomInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 846134821E56F26200D65D6E /* CustomInput.m */; };
 		846134871E56F26200D65D6E /* CustomInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846134841E56F26200D65D6E /* CustomInputView.m */; };
 		846134881E56F26200D65D6E /* CustomInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846134851E56F26200D65D6E /* CustomInputView.xib */; };
+		84C8E14B1E84A4B600867F41 /* WelcomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8E14A1E84A4B600867F41 /* WelcomeController.m */; };
+		84C8E1511E84A54A00867F41 /* RGAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8E14E1E84A54A00867F41 /* RGAdManager.m */; };
+		84C8E1521E84A54A00867F41 /* RGAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8E1501E84A54A00867F41 /* RGAdView.m */; };
 		F8B8660C778CE931A53B9252 /* libPods-Custom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF36F58667207BB263FACF7A /* libPods-Custom.a */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +117,12 @@
 		846134831E56F26200D65D6E /* CustomInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInputView.h; sourceTree = "<group>"; };
 		846134841E56F26200D65D6E /* CustomInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInputView.m; sourceTree = "<group>"; };
 		846134851E56F26200D65D6E /* CustomInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomInputView.xib; sourceTree = "<group>"; };
+		84C8E1491E84A4B600867F41 /* WelcomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeController.h; sourceTree = "<group>"; };
+		84C8E14A1E84A4B600867F41 /* WelcomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeController.m; sourceTree = "<group>"; };
+		84C8E14D1E84A54A00867F41 /* RGAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGAdManager.h; sourceTree = "<group>"; };
+		84C8E14E1E84A54A00867F41 /* RGAdManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGAdManager.m; sourceTree = "<group>"; };
+		84C8E14F1E84A54A00867F41 /* RGAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGAdView.h; sourceTree = "<group>"; };
+		84C8E1501E84A54A00867F41 /* RGAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGAdView.m; sourceTree = "<group>"; };
 		DF36F58667207BB263FACF7A /* libPods-Custom.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Custom.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F920BC3B55489A3526D43871 /* Pods-Custom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Custom.release.xcconfig"; path = "Pods/Target Support Files/Pods-Custom/Pods-Custom.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -256,6 +265,8 @@
 		843450B81E5443F800EBD6A0 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				84C8E14C1E84A53700867F41 /* AD */,
+				84C8E1481E84A4A300867F41 /* Welcome */,
 				8414FD871E83CD840052697A /* WebView */,
 				846134901E56F2E200D65D6E /* Base */,
 				8461348F1E56F2DB00D65D6E /* CustomLabel */,
@@ -406,6 +417,26 @@
 			name = Base;
 			sourceTree = "<group>";
 		};
+		84C8E1481E84A4A300867F41 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				84C8E1491E84A4B600867F41 /* WelcomeController.h */,
+				84C8E14A1E84A4B600867F41 /* WelcomeController.m */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		84C8E14C1E84A53700867F41 /* AD */ = {
+			isa = PBXGroup;
+			children = (
+				84C8E14D1E84A54A00867F41 /* RGAdManager.h */,
+				84C8E14E1E84A54A00867F41 /* RGAdManager.m */,
+				84C8E14F1E84A54A00867F41 /* RGAdView.h */,
+				84C8E1501E84A54A00867F41 /* RGAdView.m */,
+			);
+			path = AD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -536,9 +567,11 @@
 				844B424C1E542F33002F2444 /* ViewController.m in Sources */,
 				843450CE1E54477400EBD6A0 /* BaseViewController.m in Sources */,
 				843450D61E544A1F00EBD6A0 /* CusPickerController.m in Sources */,
+				84C8E14B1E84A4B600867F41 /* WelcomeController.m in Sources */,
 				843450BF1E54441400EBD6A0 /* CusDatePickerView.m in Sources */,
 				843450B71E5443E100EBD6A0 /* CustomView.m in Sources */,
 				8414FDB21E83CEEF0052697A /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */,
+				84C8E1511E84A54A00867F41 /* RGAdManager.m in Sources */,
 				846134871E56F26200D65D6E /* CustomInputView.m in Sources */,
 				8414FD861E83CD5D0052697A /* NSTimer+addition.m in Sources */,
 				8414FDB51E83CEEF0052697A /* UIView+Extension.m in Sources */,
@@ -560,6 +593,7 @@
 				8414FDAC1E83CEEF0052697A /* NSDate+Extension.m in Sources */,
 				843450D91E544BFF00EBD6A0 /* FourViewController.m in Sources */,
 				843450C81E54446F00EBD6A0 /* CusDatePickerController.m in Sources */,
+				84C8E1521E84A54A00867F41 /* RGAdView.m in Sources */,
 				846134861E56F26200D65D6E /* CustomInput.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
