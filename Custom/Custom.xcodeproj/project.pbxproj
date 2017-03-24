@@ -51,6 +51,7 @@
 		84C8E1621E84C21600867F41 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8E1611E84C21600867F41 /* TableViewController.m */; };
 		84C8E1651E84C21F00867F41 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8E1641E84C21F00867F41 /* WebViewController.m */; };
 		84C8E1681E84C3F200867F41 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8E1671E84C3F200867F41 /* HomeViewController.m */; };
+		84C8E16B1E84FAD100867F41 /* WebImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8E16A1E84FAD100867F41 /* WebImageViewController.m */; };
 		F8B8660C778CE931A53B9252 /* libPods-Custom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF36F58667207BB263FACF7A /* libPods-Custom.a */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +142,8 @@
 		84C8E1641E84C21F00867F41 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		84C8E1661E84C3F200867F41 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		84C8E1671E84C3F200867F41 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		84C8E1691E84FAD100867F41 /* WebImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebImageViewController.h; sourceTree = "<group>"; };
+		84C8E16A1E84FAD100867F41 /* WebImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebImageViewController.m; sourceTree = "<group>"; };
 		DF36F58667207BB263FACF7A /* libPods-Custom.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Custom.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F920BC3B55489A3526D43871 /* Pods-Custom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Custom.release.xcconfig"; path = "Pods/Target Support Files/Pods-Custom/Pods-Custom.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -462,6 +465,8 @@
 			children = (
 				84C8E1541E84B50400867F41 /* WebVideoVController.h */,
 				84C8E1551E84B50400867F41 /* WebVideoVController.m */,
+				84C8E1691E84FAD100867F41 /* WebImageViewController.h */,
+				84C8E16A1E84FAD100867F41 /* WebImageViewController.m */,
 			);
 			path = WebViewVideo;
 			sourceTree = "<group>";
@@ -641,6 +646,7 @@
 				8414FD861E83CD5D0052697A /* NSTimer+addition.m in Sources */,
 				8414FDB51E83CEEF0052697A /* UIView+Extension.m in Sources */,
 				844B42491E542F33002F2444 /* AppDelegate.m in Sources */,
+				84C8E16B1E84FAD100867F41 /* WebImageViewController.m in Sources */,
 				843450C51E54443500EBD6A0 /* CustomLabelController.m in Sources */,
 				84C8E1681E84C3F200867F41 /* HomeViewController.m in Sources */,
 				8414FDAE1E83CEEF0052697A /* NSObject+Common.m in Sources */,
