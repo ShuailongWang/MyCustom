@@ -45,6 +45,7 @@
 		84C8E14B1E84A4B600867F41 /* WelcomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8E14A1E84A4B600867F41 /* WelcomeController.m */; };
 		84C8E1511E84A54A00867F41 /* RGAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8E14E1E84A54A00867F41 /* RGAdManager.m */; };
 		84C8E1521E84A54A00867F41 /* RGAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8E1501E84A54A00867F41 /* RGAdView.m */; };
+		84C8E1561E84B50400867F41 /* WebVideoVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8E1551E84B50400867F41 /* WebVideoVController.m */; };
 		F8B8660C778CE931A53B9252 /* libPods-Custom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF36F58667207BB263FACF7A /* libPods-Custom.a */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +124,8 @@
 		84C8E14E1E84A54A00867F41 /* RGAdManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGAdManager.m; sourceTree = "<group>"; };
 		84C8E14F1E84A54A00867F41 /* RGAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGAdView.h; sourceTree = "<group>"; };
 		84C8E1501E84A54A00867F41 /* RGAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGAdView.m; sourceTree = "<group>"; };
+		84C8E1541E84B50400867F41 /* WebVideoVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebVideoVController.h; sourceTree = "<group>"; };
+		84C8E1551E84B50400867F41 /* WebVideoVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebVideoVController.m; sourceTree = "<group>"; };
 		DF36F58667207BB263FACF7A /* libPods-Custom.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Custom.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F920BC3B55489A3526D43871 /* Pods-Custom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Custom.release.xcconfig"; path = "Pods/Target Support Files/Pods-Custom/Pods-Custom.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -265,6 +268,7 @@
 		843450B81E5443F800EBD6A0 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				84C8E1531E84B4E300867F41 /* WebViewVideo */,
 				84C8E14C1E84A53700867F41 /* AD */,
 				84C8E1481E84A4A300867F41 /* Welcome */,
 				8414FD871E83CD840052697A /* WebView */,
@@ -437,6 +441,15 @@
 			path = AD;
 			sourceTree = "<group>";
 		};
+		84C8E1531E84B4E300867F41 /* WebViewVideo */ = {
+			isa = PBXGroup;
+			children = (
+				84C8E1541E84B50400867F41 /* WebVideoVController.h */,
+				84C8E1551E84B50400867F41 /* WebVideoVController.m */,
+			);
+			path = WebViewVideo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -567,6 +580,7 @@
 				844B424C1E542F33002F2444 /* ViewController.m in Sources */,
 				843450CE1E54477400EBD6A0 /* BaseViewController.m in Sources */,
 				843450D61E544A1F00EBD6A0 /* CusPickerController.m in Sources */,
+				84C8E1561E84B50400867F41 /* WebVideoVController.m in Sources */,
 				84C8E14B1E84A4B600867F41 /* WelcomeController.m in Sources */,
 				843450BF1E54441400EBD6A0 /* CusDatePickerView.m in Sources */,
 				843450B71E5443E100EBD6A0 /* CustomView.m in Sources */,

@@ -13,6 +13,7 @@
 #import "FourViewController.h"
 #import "RGHomeController.h"
 #import "WelcomeController.h"
+#import "WebVideoVController.h"
 
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -84,6 +85,12 @@ static NSString *UITableViewCellID = @"UITableViewCellID";
             WelcomeController *welcomeVC = [[WelcomeController alloc]init];
             [self.navigationController pushViewController:welcomeVC animated:YES];
         }
+            break;
+        case 6:{
+            WebVideoVController *videoVC = [[WebVideoVController alloc]init];
+            [self.navigationController pushViewController:videoVC animated:YES];
+        }
+            break;
         default:
             break;
     }
@@ -98,7 +105,9 @@ static NSString *UITableViewCellID = @"UITableViewCellID";
                       @"CustomDatePicker",
                       @"CustomPickerView",
                       @"inputView",
-                      @"webView"
+                      @"webView进度条, 左右滑前进后退",
+                      @"引导页",
+                      @"webView的视频,自动横屏"
                       ];
     }
     return _titleArr;
