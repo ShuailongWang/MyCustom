@@ -14,6 +14,8 @@
 #import "RGHomeController.h"
 #import "WelcomeController.h"
 #import "WebVideoVController.h"
+#import "HomeViewController.h"
+#import "HomeViewController.h"
 
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -91,6 +93,11 @@ static NSString *UITableViewCellID = @"UITableViewCellID";
             [self.navigationController pushViewController:videoVC animated:YES];
         }
             break;
+        case 7:{
+            HomeViewController *NavVC = [[HomeViewController alloc]init];
+            [self.navigationController pushViewController:NavVC animated:YES];
+        }
+            break;
         default:
             break;
     }
@@ -107,7 +114,8 @@ static NSString *UITableViewCellID = @"UITableViewCellID";
                       @"inputView",
                       @"webView进度条, 左右滑前进后退",
                       @"引导页",
-                      @"webView的视频,自动横屏"
+                      @"webView的视频,自动横屏",
+                      @"滑动屏幕,导航栏消失"
                       ];
     }
     return _titleArr;
