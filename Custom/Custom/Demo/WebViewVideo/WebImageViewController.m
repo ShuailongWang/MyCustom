@@ -58,7 +58,6 @@
 
 
 #pragma mark - UIWebDelegate
-
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     //预览图片
     if ([request.URL.scheme isEqualToString:@"image-preview"]) {
@@ -76,7 +75,17 @@
     return YES;
 }
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-    [self.wekwebView stringByEvaluatingJavaScriptFromString:@"function assignImageClickAction(){var imgs=document.getElementsByTagName('img');var length=imgs.length;for(var i=0;i<length;i++){img=imgs[i];img.onclick=function(){window.location.href='image-preview:'+this.src}}}"];
+    [self.wekwebView stringByEvaluatingJavaScriptFromString:@"\
+     function assignImageClickAction(){\
+         var imgs=document.getElementsByTagName('img');\
+            var length=imgs.length;\
+            for(var i=0;i<length;i++){\
+                img=imgs[i];\
+                img.onclick=function(){\
+                window.location.href='image-preview:'+this.src\
+            }\
+         }\
+     }"];
     
     [self.wekwebView stringByEvaluatingJavaScriptFromString:@"assignImageClickAction();"];
 }

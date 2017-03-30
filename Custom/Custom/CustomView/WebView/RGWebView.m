@@ -8,6 +8,8 @@
 
 #import "RGWebView.h"
 
+#define KWidth 50
+#define kHeight 30
 @interface RGWebView()
 
 @property (nonatomic, strong) UIView *redView;
@@ -34,13 +36,12 @@
 -(void)setupUI{
     if (nil == _redView) {
         _redView = [[UIView alloc]init];
-        _redView.backgroundColor = [UIColor redColor];
-        _redView.hidden = YES;
+        _redView.backgroundColor = [UIColor grayColor];
         [self addSubview:_redView];
     }
     if (nil == _blueView) {
         _blueView = [[UIView alloc]init];
-        _blueView.backgroundColor = [UIColor blueColor];
+        _blueView.backgroundColor = [UIColor grayColor];
         [self addSubview:_blueView];
     }
     UIPanGestureRecognizer *gesture = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panGesture:)];
@@ -48,9 +49,8 @@
 }
 -(void)layoutSubviews{
     [super layoutSubviews];
-    self.redView.frame = CGRectMake(-100, 100, 100, 50);
-    self.redView.hidden = NO;
-    self.blueView.frame = CGRectMake(KScreen_Width, 100, 100, 50);
+    self.redView.frame = CGRectMake(-KWidth, KWidth, KWidth, kHeight);
+    self.blueView.frame = CGRectMake(KScreen_Width, KWidth, KWidth, kHeight);
 }
 
 
@@ -59,7 +59,7 @@
     if (![self canGoBack] && ![self canGoForward]) {
         return;
     }
-
+    
     //状态
     if (sender.state == UIGestureRecognizerStateBegan) {
         
@@ -69,19 +69,24 @@
     }else if (sender.state == UIGestureRecognizerStateChanged) {
         
         CGPoint location = [sender locationInView:self];
+        
         if (location.x - self.start > 0 && [self canGoBack]) {
-         
-            self.redView.x = MIN(location.x - self.start, 100) - 100;
-            self.backBool = YES;
             
-        }else{
+            self.redView.x = MIN(location.x - self.start, KWidth) - KWidth;
+            if (location.x - self.start > KWidth) {
+                self.backBool = YES;
+            }
+            
+        }else if (location.x - self.start < 0 && [self canGoBack]) {
             if ([self canGoForward]) {
-                self.blueView.x = KScreen_Width - MIN(-(location.x - self.start), 100);
-                self.forwardBool = YES;
+                self.blueView.x = KScreen_Width - MIN(-(location.x - self.start), KWidth);
+                if (ABS(location.x - self.start) > KWidth) {
+                    self.forwardBool = YES;
+                }
             }
         }
     }else if (sender.state == UIGestureRecognizerStateEnded) {
-        self.redView.x = -100;
+        self.redView.x = -KWidth;
         self.blueView.x = KScreen_Width;
         self.start = 0;
         if (self.backBool) {
