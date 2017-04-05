@@ -72,7 +72,8 @@
 //状态栏 ＋ 导航栏 高度
 #define STATUS_AND_NAVIGATION_HEIGHT ((STATUS_BAR_HEIGHT) + (NAVIGATION_BAR_HEIGHT))
 
-
+#define KCommonListKey  @"KCommonListKey"
+#define KTypeListKey    @"KTypeListKey"
 
 
 #endif /* RGMacros_h */

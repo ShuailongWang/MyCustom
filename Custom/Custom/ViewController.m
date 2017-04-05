@@ -17,6 +17,7 @@
 #import "HomeViewController.h"
 #import "HomeViewController.h"
 #import "WebImageViewController.h"
+#import "MyCollectionViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -102,6 +103,10 @@ static NSString *UITableViewCellID = @"UITableViewCellID";
             WebImageViewController *NavVC = [[WebImageViewController alloc]init];
             [self.navigationController pushViewController:NavVC animated:YES];
         }
+        case 9:{
+            MyCollectionViewController *NavVC = [[MyCollectionViewController alloc]init];
+            [self.navigationController pushViewController:NavVC animated:YES];
+        }
             break;
         default:
             break;
@@ -121,7 +126,8 @@ static NSString *UITableViewCellID = @"UITableViewCellID";
                       @"引导页",
                       @"webView的视频,自动横屏",
                       @"滑动屏幕,导航栏消失",
-                      @"webView中的图片点击放大"
+                      @"webView中的图片点击放大",
+                      @"collection拖动"
                       ];
     }
     return _titleArr;
