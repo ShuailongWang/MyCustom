@@ -39,15 +39,15 @@
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.mas_left).offset(15.);
         make.bottom.mas_equalTo(self.mas_bottom);
-        make.width.mas_equalTo(40.);
-        make.height.mas_equalTo(25.);
+        make.width.mas_equalTo(80);
+        make.height.mas_equalTo(25);
     }];
     
     [self.titleSubLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.titleLabel.mas_right).offset(5.);
         make.bottom.mas_equalTo(self.mas_bottom);
-        make.width.mas_equalTo(200.);
-        make.height.mas_equalTo(25.);
+        make.width.mas_equalTo(KScreen_Width - 115);
+        make.height.mas_equalTo(25);
     }];
     
     [self.topLineView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -68,6 +68,7 @@
 - (UILabel *)titleSubLabel {
     if (_titleSubLabel == nil) {
         _titleSubLabel = [[UILabel alloc] init];
+        _titleSubLabel.textAlignment = NSTextAlignmentRight;
         _titleSubLabel.font = [UIFont systemFontOfSize:13.];
         _titleSubLabel.textColor = HEXColor(0x8d8d8d);
     }
@@ -85,12 +86,12 @@
 - (void)setSectionIndex:(NSInteger)sectionIndex {
     if (sectionIndex == 0) {
         _titleLabel.text = @"常用";
-        _titleSubLabel.text = self.isSelectManageButton ? @"点击可删除，长按可拖动排序" : @"";
+        _titleSubLabel.text = self.isSelectManageButton ? @"长按可拖动排序" : @"";
         _topLineView.hidden = YES;
     }
     if (sectionIndex == 1) {
         _titleLabel.text = @"更多";
-        _titleSubLabel.text = self.isSelectManageButton ? @"点击可添加到常用" : @"";
+        _titleSubLabel.text = self.isSelectManageButton ? @"" : @"";
         _topLineView.hidden = NO;
     }
 }

@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 
 typedef enum : NSUInteger {
-    TopRightImageDelete_Type,
-    TopRightImageAdd_Type,
-    TopRightImageHide_Type
+    TopRightImageDelete_Type,   //加号
+    TopRightImageAdd_Type,      //减号
+    TopRightImageHide_Type      //无
 } TopRightImageShowType;
 
 @class MyCollectionModel;

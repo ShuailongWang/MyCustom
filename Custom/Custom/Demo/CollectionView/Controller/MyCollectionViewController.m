@@ -31,8 +31,14 @@ static NSString * const MyCollectionReusableViewID = @"MyCollectionReusableView"
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [MyCollectionModel MyCollectionModelWithData];
+    //只加载一次
+    BOOL isOne = [kUserDefaults objectForKey:@"isOne"];
+    if (!isOne) {
+        [MyCollectionModel MyCollectionModelWithData];
+        [kUserDefaults setBool:YES forKey:@"isOne"];
+    }
     
+    //设置UI
     [self setUpTheViewFrame];
 }
 
@@ -111,26 +117,31 @@ static NSString * const MyCollectionReusableViewID = @"MyCollectionReusableView"
         NSLog(@"selected %@",cell.model.name);
         return;
     }
-    //常用为8
-    if (self.commonArray.count == 8) {
-        return;
-    }
+
     id removeItem;
     if (indexPath.section == 0) {
+        if (self.commonArray.count == 1) {
+            return;
+        }
         removeItem = self.commonArray[indexPath.item];
         [self.commonArray removeObjectAtIndex:indexPath.item];
     }
     if (indexPath.section == 1) {
+        if (self.commonArray.count == 8) {
+            return;
+        }
         removeItem = self.moreArray[indexPath.item];
         [self.moreArray removeObjectAtIndex:indexPath.item];
     }
     MyCollectionViewCell *cell = (MyCollectionViewCell *)[self.myCollectionView cellForItemAtIndexPath:indexPath];
+    //常用
     if (indexPath.section == 0) {
         [self.moreArray insertObject:removeItem atIndex:0];
         [self.myCollectionView moveItemAtIndexPath:indexPath toIndexPath:[NSIndexPath indexPathForItem:0 inSection:1]];
         //需要更新cell右上角的图片状态为添加
         [cell setTheCellRightTopImageContent:TopRightImageAdd_Type];
     }
+    //更多
     if (indexPath.section == 1) {
         [self.commonArray insertObject:removeItem atIndex:0];
         [self.myCollectionView moveItemAtIndexPath:indexPath toIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]];

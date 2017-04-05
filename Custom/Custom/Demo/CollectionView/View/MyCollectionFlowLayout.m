@@ -68,6 +68,7 @@ typedef NS_ENUM(NSInteger, DragScrollDirction) {
     [self setUpCollectionViewGesture];
 }
 
+//返回对应于indexPath的位置的cell的布局属性
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewLayoutAttributes *attribute = [super layoutAttributesForItemAtIndexPath:indexPath];
     return attribute;
