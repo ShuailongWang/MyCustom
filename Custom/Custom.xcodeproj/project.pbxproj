@@ -42,6 +42,10 @@
 		846134861E56F26200D65D6E /* CustomInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 846134821E56F26200D65D6E /* CustomInput.m */; };
 		846134871E56F26200D65D6E /* CustomInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846134841E56F26200D65D6E /* CustomInputView.m */; };
 		846134881E56F26200D65D6E /* CustomInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846134851E56F26200D65D6E /* CustomInputView.xib */; };
+		84667B2A1E974303006DD75E /* Music.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84667B271E974303006DD75E /* Music.storyboard */; };
+		84667B2B1E974303006DD75E /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84667B291E974303006DD75E /* MusicViewController.m */; };
+		84667B2E1E97431D006DD75E /* MusicSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 84667B2D1E97431D006DD75E /* MusicSlider.m */; };
+		84667B311E974324006DD75E /* PlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84667B301E974324006DD75E /* PlayManager.m */; };
 		84C8E14B1E84A4B600867F41 /* WelcomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8E14A1E84A4B600867F41 /* WelcomeController.m */; };
 		84C8E1511E84A54A00867F41 /* RGAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8E14E1E84A54A00867F41 /* RGAdManager.m */; };
 		84C8E1521E84A54A00867F41 /* RGAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8E1501E84A54A00867F41 /* RGAdView.m */; };
@@ -130,6 +134,13 @@
 		846134831E56F26200D65D6E /* CustomInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInputView.h; sourceTree = "<group>"; };
 		846134841E56F26200D65D6E /* CustomInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInputView.m; sourceTree = "<group>"; };
 		846134851E56F26200D65D6E /* CustomInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomInputView.xib; sourceTree = "<group>"; };
+		84667B271E974303006DD75E /* Music.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Music.storyboard; sourceTree = "<group>"; };
+		84667B281E974303006DD75E /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
+		84667B291E974303006DD75E /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
+		84667B2C1E97431D006DD75E /* MusicSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicSlider.h; sourceTree = "<group>"; };
+		84667B2D1E97431D006DD75E /* MusicSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicSlider.m; sourceTree = "<group>"; };
+		84667B2F1E974324006DD75E /* PlayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayManager.h; sourceTree = "<group>"; };
+		84667B301E974324006DD75E /* PlayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayManager.m; sourceTree = "<group>"; };
 		84C8E1491E84A4B600867F41 /* WelcomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeController.h; sourceTree = "<group>"; };
 		84C8E14A1E84A4B600867F41 /* WelcomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeController.m; sourceTree = "<group>"; };
 		84C8E14D1E84A54A00867F41 /* RGAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGAdManager.h; sourceTree = "<group>"; };
@@ -303,6 +314,7 @@
 		843450B81E5443F800EBD6A0 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				84667B231E9742E5006DD75E /* Music */,
 				84DE1FAB1E94784000AE725F /* CollectionView */,
 				84C8E1571E84C16B00867F41 /* scroOrTableOrWebView */,
 				84C8E1531E84B4E300867F41 /* WebViewVideo */,
@@ -457,6 +469,44 @@
 				843450CD1E54477400EBD6A0 /* BaseViewController.m */,
 			);
 			name = Base;
+			sourceTree = "<group>";
+		};
+		84667B231E9742E5006DD75E /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				84667B241E9742E5006DD75E /* Controller */,
+				84667B251E9742E5006DD75E /* Other */,
+				84667B261E9742E5006DD75E /* View */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		84667B241E9742E5006DD75E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84667B281E974303006DD75E /* MusicViewController.h */,
+				84667B291E974303006DD75E /* MusicViewController.m */,
+				84667B271E974303006DD75E /* Music.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84667B251E9742E5006DD75E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				84667B2F1E974324006DD75E /* PlayManager.h */,
+				84667B301E974324006DD75E /* PlayManager.m */,
+				84667B2C1E97431D006DD75E /* MusicSlider.h */,
+				84667B2D1E97431D006DD75E /* MusicSlider.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		84667B261E9742E5006DD75E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		84C8E1481E84A4A300867F41 /* Welcome */ = {
@@ -634,6 +684,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84667B2A1E974303006DD75E /* Music.storyboard in Resources */,
 				846134881E56F26200D65D6E /* CustomInputView.xib in Resources */,
 				843450C01E54441400EBD6A0 /* CusDatePickerView.xib in Resources */,
 				84DE1FC71E94856A00AE725F /* Type.json in Resources */,
@@ -701,6 +752,7 @@
 			files = (
 				84C8E15F1E84C20D00867F41 /* ScrollViewController.m in Sources */,
 				84C8E1651E84C21F00867F41 /* WebViewController.m in Sources */,
+				84667B2E1E97431D006DD75E /* MusicSlider.m in Sources */,
 				8414FD911E83CDA20052697A /* NSURLProtocol+WebKitSupport.m in Sources */,
 				84DE1FB71E9478B400AE725F /* MyCollectionModel.m in Sources */,
 				844B424C1E542F33002F2444 /* ViewController.m in Sources */,
@@ -708,6 +760,7 @@
 				843450D61E544A1F00EBD6A0 /* CusPickerController.m in Sources */,
 				84DE1FC01E94791600AE725F /* MyCollectionFlowLayout.m in Sources */,
 				84C8E1561E84B50400867F41 /* WebVideoVController.m in Sources */,
+				84667B2B1E974303006DD75E /* MusicViewController.m in Sources */,
 				84C8E14B1E84A4B600867F41 /* WelcomeController.m in Sources */,
 				843450BF1E54441400EBD6A0 /* CusDatePickerView.m in Sources */,
 				843450B71E5443E100EBD6A0 /* CustomView.m in Sources */,
@@ -719,6 +772,7 @@
 				84DE1FBD1E9478FD00AE725F /* MyCollectionViewCell.m in Sources */,
 				844B42491E542F33002F2444 /* AppDelegate.m in Sources */,
 				84DE1FB41E94788600AE725F /* MyCollectionViewController.m in Sources */,
+				84667B311E974324006DD75E /* PlayManager.m in Sources */,
 				84C8E16B1E84FAD100867F41 /* WebImageViewController.m in Sources */,
 				843450C51E54443500EBD6A0 /* CustomLabelController.m in Sources */,
 				84C8E1681E84C3F200867F41 /* HomeViewController.m in Sources */,

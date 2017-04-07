@@ -18,6 +18,7 @@
 #import "HomeViewController.h"
 #import "WebImageViewController.h"
 #import "MyCollectionViewController.h"
+#import "MusicViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -53,64 +54,25 @@ static NSString *UITableViewCellID = @"UITableViewCellID";
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:UITableViewCellID forIndexPath:indexPath];
-    cell.textLabel.text = self.titleArr[indexPath.row];
+    NSDictionary *dict = self.titleArr[indexPath.row];
+    cell.textLabel.text = dict[@"Title"];
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    switch (indexPath.row) {
-        case 0:{
-            CustomLabelController *CustomVC = [[CustomLabelController alloc]init];
-            [self.navigationController pushViewController:CustomVC animated:YES];
-        }
-            break;
-        case 1:{
-            CusDatePickerController *CustomVC = [[CusDatePickerController alloc]init];
-            [self.navigationController pushViewController:CustomVC animated:YES];
-        }
-            break;
-        case 2:{
-            CusPickerController *CustomVC = [[CusPickerController alloc]init];
-            [self.navigationController pushViewController:CustomVC animated:YES];
-        }
-            break;
-        case 3:{
-            FourViewController *CustomVC = [[FourViewController alloc]init];
-            [self.navigationController pushViewController:CustomVC animated:YES];
-        }
-            break;
-        case 4:{
-            RGHomeController *CustomVC = [[RGHomeController alloc]init];
-            [self.navigationController pushViewController:CustomVC animated:YES];
-        }
-            break;
-        case 5:{
-            WelcomeController *welcomeVC = [[WelcomeController alloc]init];
-            [self.navigationController pushViewController:welcomeVC animated:YES];
-        }
-            break;
-        case 6:{
-            WebVideoVController *videoVC = [[WebVideoVController alloc]init];
-            [self.navigationController pushViewController:videoVC animated:YES];
-        }
-            break;
-        case 7:{
-            HomeViewController *NavVC = [[HomeViewController alloc]init];
-            [self.navigationController pushViewController:NavVC animated:YES];
-        }
-            break;
-        case 8:{
-            WebImageViewController *NavVC = [[WebImageViewController alloc]init];
-            [self.navigationController pushViewController:NavVC animated:YES];
-        }
-        case 9:{
-            MyCollectionViewController *NavVC = [[MyCollectionViewController alloc]init];
-            [self.navigationController pushViewController:NavVC animated:YES];
-        }
-            break;
-        default:
-            break;
+    
+    NSDictionary *dict = self.titleArr[indexPath.row];
+    
+    //yinyue
+    if ([dict[@"VC"] isEqualToString:@"MusicViewController"]) {
+        MusicViewController *musicVC = [MusicViewController sharedInstance];
+        [self.navigationController pushViewController:musicVC animated:YES];
+        return;
     }
+    
+    
+    id vc =  [[NSClassFromString(dict[@"VC"]) alloc] init];;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
@@ -118,16 +80,17 @@ static NSString *UITableViewCellID = @"UITableViewCellID";
 -(NSArray *)titleArr{
     if (nil == _titleArr) {
         _titleArr = @[
-                      @"CustomLabel",
-                      @"CustomDatePicker",
-                      @"CustomPickerView",
-                      @"inputView",
-                      @"webView进度条, 左右滑前进后退",
-                      @"引导页",
-                      @"webView的视频,自动横屏",
-                      @"滑动屏幕,导航栏消失",
-                      @"webView中的图片点击放大",
-                      @"collection拖动"
+                      @{@"Title": @"CustomLabel",       @"VC":@"CustomLabelController"},
+                      @{@"Title": @"CustomDatePicker",  @"VC":@"CusDatePickerController"},
+                      @{@"Title": @"CustomPickerView",  @"VC":@"CusPickerController"},
+                      @{@"Title": @"inputView", @"VC":  @"FourViewController"},
+                      @{@"Title": @"webView进度条, 左右滑前进后退", @"VC":@"RGHomeController"},
+                      @{@"Title": @"引导页", @"VC":       @"WelcomeController"},
+                      @{@"Title": @"webView的视频,自动横屏",@"VC":@"WebVideoVController"},
+                      @{@"Title": @"滑动屏幕,导航栏消失",    @"VC":@"HomeViewController"},
+                      @{@"Title": @"webView中的图片点击放大",@"VC":@"WebImageViewController"},
+                      @{@"Title": @"collection拖动",       @"VC":@"MyCollectionViewController"},
+                      @{@"Title": @"Music",             @"VC":@"MusicViewController"}
                       ];
     }
     return _titleArr;
