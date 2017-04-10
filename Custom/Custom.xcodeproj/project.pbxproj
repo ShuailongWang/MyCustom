@@ -33,6 +33,9 @@
 		843450D31E5449A300EBD6A0 /* CusPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843450D11E5449A300EBD6A0 /* CusPickerView.xib */; };
 		843450D61E544A1F00EBD6A0 /* CusPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843450D51E544A1F00EBD6A0 /* CusPickerController.m */; };
 		843450D91E544BFF00EBD6A0 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843450D81E544BFF00EBD6A0 /* FourViewController.m */; };
+		84443F1F1E9B3049008CDE00 /* HeadCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84443F1B1E9B3049008CDE00 /* HeadCycleView.m */; };
+		84443F201E9B3049008CDE00 /* MyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84443F1E1E9B3049008CDE00 /* MyTableView.m */; };
+		84443F231E9B3059008CDE00 /* AliHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84443F221E9B3059008CDE00 /* AliHomeController.m */; };
 		844B42461E542F33002F2444 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B42451E542F33002F2444 /* main.m */; };
 		844B42491E542F33002F2444 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B42481E542F33002F2444 /* AppDelegate.m */; };
 		844B424C1E542F33002F2444 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B424B1E542F33002F2444 /* ViewController.m */; };
@@ -119,6 +122,12 @@
 		843450D51E544A1F00EBD6A0 /* CusPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CusPickerController.m; sourceTree = "<group>"; };
 		843450D71E544BFF00EBD6A0 /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
 		843450D81E544BFF00EBD6A0 /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
+		84443F1A1E9B3049008CDE00 /* HeadCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadCycleView.h; sourceTree = "<group>"; };
+		84443F1B1E9B3049008CDE00 /* HeadCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadCycleView.m; sourceTree = "<group>"; };
+		84443F1D1E9B3049008CDE00 /* MyTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableView.h; sourceTree = "<group>"; };
+		84443F1E1E9B3049008CDE00 /* MyTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableView.m; sourceTree = "<group>"; };
+		84443F211E9B3059008CDE00 /* AliHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliHomeController.h; sourceTree = "<group>"; };
+		84443F221E9B3059008CDE00 /* AliHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliHomeController.m; sourceTree = "<group>"; };
 		844B42411E542F33002F2444 /* Custom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Custom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844B42451E542F33002F2444 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		844B42471E542F33002F2444 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -314,6 +323,7 @@
 		843450B81E5443F800EBD6A0 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				84443F151E9B3033008CDE00 /* Alipay_Home */,
 				84667B231E9742E5006DD75E /* Music */,
 				84DE1FAB1E94784000AE725F /* CollectionView */,
 				84C8E1571E84C16B00867F41 /* scroOrTableOrWebView */,
@@ -336,6 +346,59 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		84443F151E9B3033008CDE00 /* Alipay_Home */ = {
+			isa = PBXGroup;
+			children = (
+				84443F161E9B3033008CDE00 /* Controller */,
+				84443F171E9B3033008CDE00 /* Other */,
+				84443F181E9B3033008CDE00 /* Views */,
+			);
+			path = Alipay_Home;
+			sourceTree = "<group>";
+		};
+		84443F161E9B3033008CDE00 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84443F211E9B3059008CDE00 /* AliHomeController.h */,
+				84443F221E9B3059008CDE00 /* AliHomeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84443F171E9B3033008CDE00 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		84443F181E9B3033008CDE00 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84443F191E9B3049008CDE00 /* HeadCycle */,
+				84443F1C1E9B3049008CDE00 /* MyTableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84443F191E9B3049008CDE00 /* HeadCycle */ = {
+			isa = PBXGroup;
+			children = (
+				84443F1A1E9B3049008CDE00 /* HeadCycleView.h */,
+				84443F1B1E9B3049008CDE00 /* HeadCycleView.m */,
+			);
+			path = HeadCycle;
+			sourceTree = "<group>";
+		};
+		84443F1C1E9B3049008CDE00 /* MyTableView */ = {
+			isa = PBXGroup;
+			children = (
+				84443F1D1E9B3049008CDE00 /* MyTableView.h */,
+				84443F1E1E9B3049008CDE00 /* MyTableView.m */,
+			);
+			path = MyTableView;
 			sourceTree = "<group>";
 		};
 		844B42381E542F33002F2444 = {
@@ -773,6 +836,7 @@
 				844B42491E542F33002F2444 /* AppDelegate.m in Sources */,
 				84DE1FB41E94788600AE725F /* MyCollectionViewController.m in Sources */,
 				84667B311E974324006DD75E /* PlayManager.m in Sources */,
+				84443F1F1E9B3049008CDE00 /* HeadCycleView.m in Sources */,
 				84C8E16B1E84FAD100867F41 /* WebImageViewController.m in Sources */,
 				843450C51E54443500EBD6A0 /* CustomLabelController.m in Sources */,
 				84C8E1681E84C3F200867F41 /* HomeViewController.m in Sources */,
@@ -780,6 +844,7 @@
 				8414FDB11E83CEEF0052697A /* UIImage+Common.m in Sources */,
 				84DE1FBA1E9478EE00AE725F /* MyCollectionReusableView.m in Sources */,
 				8414FD901E83CDA20052697A /* JYCustomWebViewProtocol.m in Sources */,
+				84443F231E9B3059008CDE00 /* AliHomeController.m in Sources */,
 				8414FD831E83CD500052697A /* RGWebView.m in Sources */,
 				8414FDB41E83CEEF0052697A /* UITextView+Extension.m in Sources */,
 				8414FDAF1E83CEEF0052697A /* NSString+Extension.m in Sources */,
@@ -795,6 +860,7 @@
 				84C8E1621E84C21600867F41 /* TableViewController.m in Sources */,
 				843450D91E544BFF00EBD6A0 /* FourViewController.m in Sources */,
 				843450C81E54446F00EBD6A0 /* CusDatePickerController.m in Sources */,
+				84443F201E9B3049008CDE00 /* MyTableView.m in Sources */,
 				84C8E1521E84A54A00867F41 /* RGAdView.m in Sources */,
 				846134861E56F26200D65D6E /* CustomInput.m in Sources */,
 			);

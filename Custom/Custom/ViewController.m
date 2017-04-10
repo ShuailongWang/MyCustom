@@ -19,6 +19,7 @@
 #import "WebImageViewController.h"
 #import "MyCollectionViewController.h"
 #import "MusicViewController.h"
+#import "AliHomeController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -90,7 +91,8 @@ static NSString *UITableViewCellID = @"UITableViewCellID";
                       @{@"Title": @"滑动屏幕,导航栏消失",    @"VC":@"HomeViewController"},
                       @{@"Title": @"webView中的图片点击放大",@"VC":@"WebImageViewController"},
                       @{@"Title": @"collection拖动",       @"VC":@"MyCollectionViewController"},
-                      @{@"Title": @"Music",             @"VC":@"MusicViewController"}
+                      @{@"Title": @"Music",             @"VC":@"MusicViewController"},
+                      @{@"Title": @"类似于支付宝首页下拉",             @"VC":@"AliHomeController"},
                       ];
     }
     return _titleArr;
