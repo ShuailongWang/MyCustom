@@ -19,6 +19,7 @@
     if (self = [super initWithFrame:frame style:style]) {
         self.dataSource = self;
         self.delegate = self;
+        self.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
         self.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:nil];
     }
     return self;
@@ -61,9 +62,17 @@
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
 }
-
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return @"标题";
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 30;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 0.01;
+}
 
 @end

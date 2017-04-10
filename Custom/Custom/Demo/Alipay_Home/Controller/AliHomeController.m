@@ -9,15 +9,16 @@
 #import "AliHomeController.h"
 #import "MyTableView.h"
 #import "HeadCycleView.h"
+#import "FunctionView.h"
 
-#define offsetNor  300     //偏移
+#define offsetNor  310     //偏移
 
-@interface AliHomeController ()<UIScrollViewDelegate>
+@interface AliHomeController ()<UIScrollViewDelegate, HeadCycleViewDelegate, FunctionViewDelegate>
 
 @property (nonatomic, strong) UIScrollView *myScrollView;   //scrollview
 @property (nonatomic, strong) UIView *topHeadView;             //头部
 @property (nonatomic, strong) HeadCycleView *headCycleView;
-@property (nonatomic, strong) UIView *functionView;         //功能
+@property (nonatomic, strong) FunctionView *functionView;         //功能
 @property (nonatomic, strong) MyTableView *myTableView;     //tableView
 
 @end
@@ -28,7 +29,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    
+    self.view.backgroundColor = kBagroundColor;
+    
     [self setupUI];
 }
 -(void)viewDidAppear:(BOOL)animated{
@@ -45,37 +48,42 @@
 }
 
 -(void)setupUI{
+    
     self.automaticallyAdjustsScrollViewInsets = NO;
+    self.edgesForExtendedLayout = UIRectEdgeNone;   //避免tabBar遮挡
     //总
     if (nil == _myScrollView) {
-        _myScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 64, KScreen_Width, KScreen_Height-64)];
+        _myScrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
         _myScrollView.scrollIndicatorInsets = UIEdgeInsetsMake(offsetNor, 0, 0, 0);
+        //跟着view同时调整尺寸
+        _myScrollView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
         _myScrollView.delegate = self;
         [self.view addSubview:_myScrollView];
     }
     //头部
     if (nil == _topHeadView) {
         _topHeadView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KScreen_Width, offsetNor)];
-        _topHeadView.backgroundColor = [UIColor whiteColor];
         [_myScrollView addSubview:_topHeadView];
     }
     if (nil == _headCycleView) {
-        _headCycleView = [[HeadCycleView alloc]initWithFrame:CGRectMake(0, 0, KScreen_Width, 150)];
+        _headCycleView = [[HeadCycleView alloc]initWithFrame:CGRectMake(0, 0, KScreen_Width, 160)];
+        _headCycleView.delegate = self;
         [_topHeadView addSubview:_headCycleView];
     }
     //功能
     if (nil == _functionView) {
-        _functionView = [[UIView alloc]initWithFrame:CGRectMake(0, _headCycleView.bottom, KScreen_Width, 150)];
+        _functionView = [[FunctionView alloc]initWithFrame:CGRectMake(0, _headCycleView.bottom, KScreen_Width, 140)];
         _functionView.backgroundColor = [UIColor blueColor];
+        _functionView.delegate = self;
         [_topHeadView addSubview:_functionView];
     }
     //tableView
     if (nil == _myTableView) {
-        _myTableView = [[MyTableView alloc]initWithFrame:CGRectMake(0, offsetNor, KScreen_Width, KScreen_Height - offsetNor) style:UITableViewStylePlain];
+        _myTableView = [[MyTableView alloc]initWithFrame:CGRectMake(0, offsetNor, KScreen_Width, _myScrollView.height - offsetNor) style:UITableViewStyleGrouped];
+        
         [_myScrollView addSubview:_myTableView];
     }
 }
-
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     CGFloat offsetY = scrollView.contentOffset.y;
@@ -107,5 +115,14 @@
     }
 }
 
+
+#pragma mark - FunctionViewDelegate
+-(void)didSelectIitem{
+    NSLog(@"1");
+}
+#pragma mark - HeadCycleViewDelegate
+-(void)HeadCycleView:(HeadCycleView *)headCycleView index:(NSInteger)index{
+    NSLog(@"%zd", index);
+}
 
 @end

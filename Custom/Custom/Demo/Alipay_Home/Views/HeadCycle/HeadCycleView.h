@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class HeadCycleView;
-@protocol RGHomeCycleCellDelegate <NSObject>
+@protocol HeadCycleViewDelegate <NSObject>
 
 -(void)HeadCycleView:(HeadCycleView*)headCycleView index:(NSInteger)index;
 
@@ -17,6 +17,6 @@
 
 @interface HeadCycleView : UIView
 
-@property (weak,nonatomic) id<RGHomeCycleCellDelegate> delegate;
+@property (weak,nonatomic) id<HeadCycleViewDelegate> delegate;
 
 @end

@@ -36,6 +36,7 @@
 		84443F1F1E9B3049008CDE00 /* HeadCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84443F1B1E9B3049008CDE00 /* HeadCycleView.m */; };
 		84443F201E9B3049008CDE00 /* MyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84443F1E1E9B3049008CDE00 /* MyTableView.m */; };
 		84443F231E9B3059008CDE00 /* AliHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84443F221E9B3059008CDE00 /* AliHomeController.m */; };
+		84443F341E9B6A2B008CDE00 /* FunctionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84443F331E9B6A2B008CDE00 /* FunctionView.m */; };
 		844B42461E542F33002F2444 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B42451E542F33002F2444 /* main.m */; };
 		844B42491E542F33002F2444 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B42481E542F33002F2444 /* AppDelegate.m */; };
 		844B424C1E542F33002F2444 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B424B1E542F33002F2444 /* ViewController.m */; };
@@ -128,6 +129,8 @@
 		84443F1E1E9B3049008CDE00 /* MyTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableView.m; sourceTree = "<group>"; };
 		84443F211E9B3059008CDE00 /* AliHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliHomeController.h; sourceTree = "<group>"; };
 		84443F221E9B3059008CDE00 /* AliHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliHomeController.m; sourceTree = "<group>"; };
+		84443F321E9B6A2B008CDE00 /* FunctionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionView.h; sourceTree = "<group>"; };
+		84443F331E9B6A2B008CDE00 /* FunctionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionView.m; sourceTree = "<group>"; };
 		844B42411E542F33002F2444 /* Custom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Custom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844B42451E542F33002F2444 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		844B42471E542F33002F2444 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -377,6 +380,7 @@
 		84443F181E9B3033008CDE00 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				84443F311E9B6A27008CDE00 /* FunctionView */,
 				84443F191E9B3049008CDE00 /* HeadCycle */,
 				84443F1C1E9B3049008CDE00 /* MyTableView */,
 			);
@@ -399,6 +403,15 @@
 				84443F1E1E9B3049008CDE00 /* MyTableView.m */,
 			);
 			path = MyTableView;
+			sourceTree = "<group>";
+		};
+		84443F311E9B6A27008CDE00 /* FunctionView */ = {
+			isa = PBXGroup;
+			children = (
+				84443F321E9B6A2B008CDE00 /* FunctionView.h */,
+				84443F331E9B6A2B008CDE00 /* FunctionView.m */,
+			);
+			path = FunctionView;
 			sourceTree = "<group>";
 		};
 		844B42381E542F33002F2444 = {
@@ -839,6 +852,7 @@
 				84443F1F1E9B3049008CDE00 /* HeadCycleView.m in Sources */,
 				84C8E16B1E84FAD100867F41 /* WebImageViewController.m in Sources */,
 				843450C51E54443500EBD6A0 /* CustomLabelController.m in Sources */,
+				84443F341E9B6A2B008CDE00 /* FunctionView.m in Sources */,
 				84C8E1681E84C3F200867F41 /* HomeViewController.m in Sources */,
 				8414FDAE1E83CEEF0052697A /* NSObject+Common.m in Sources */,
 				8414FDB11E83CEEF0052697A /* UIImage+Common.m in Sources */,

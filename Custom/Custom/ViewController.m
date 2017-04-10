@@ -81,18 +81,18 @@ static NSString *UITableViewCellID = @"UITableViewCellID";
 -(NSArray *)titleArr{
     if (nil == _titleArr) {
         _titleArr = @[
-                      @{@"Title": @"CustomLabel",       @"VC":@"CustomLabelController"},
-                      @{@"Title": @"CustomDatePicker",  @"VC":@"CusDatePickerController"},
-                      @{@"Title": @"CustomPickerView",  @"VC":@"CusPickerController"},
-                      @{@"Title": @"inputView", @"VC":  @"FourViewController"},
+                      @{@"Title": @"标签,可以返回高度", @"VC":  @"CustomLabelController"},
+                      @{@"Title": @"日期",            @"VC":  @"CusDatePickerController"},
+                      @{@"Title": @"男女",            @"VC":  @"CusPickerController"},
+                      @{@"Title": @"输入框",           @"VC":  @"FourViewController"},
                       @{@"Title": @"webView进度条, 左右滑前进后退", @"VC":@"RGHomeController"},
-                      @{@"Title": @"引导页", @"VC":       @"WelcomeController"},
+                      @{@"Title": @"引导页",               @"VC": @"WelcomeController"},
                       @{@"Title": @"webView的视频,自动横屏",@"VC":@"WebVideoVController"},
                       @{@"Title": @"滑动屏幕,导航栏消失",    @"VC":@"HomeViewController"},
                       @{@"Title": @"webView中的图片点击放大",@"VC":@"WebImageViewController"},
-                      @{@"Title": @"collection拖动",       @"VC":@"MyCollectionViewController"},
+                      @{@"Title": @"collection拖动",      @"VC":@"MyCollectionViewController"},
                       @{@"Title": @"Music",             @"VC":@"MusicViewController"},
-                      @{@"Title": @"类似于支付宝首页下拉",             @"VC":@"AliHomeController"},
+                      @{@"Title": @"类似于支付宝首页下拉",  @"VC":@"AliHomeController"},
                       ];
     }
     return _titleArr;
